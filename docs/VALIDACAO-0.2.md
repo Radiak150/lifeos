@@ -12,6 +12,8 @@
 - Modo escuro e menu recolhido conferidos visualmente. Layout de 390px conferido; excesso de largura da barra de água corrigido.
 - Nova verificação móvel: painel de água sem largura excedente; Casa/Pets/Projetos separados; menu abre e fecha ao navegar; guia mostra uma etapa por vez.
 - Executável Windows abriu em janela própria no endereço local lifeos://app e exibiu o primeiro acesso. Não foi preenchido com os dados pessoais do usuário.
+- Instalador Windows e APK foram gerados novamente após a limpeza de privacidade. O índice da interface dentro de ambos os pacotes corresponde ao build final.
+- Assinatura de desenvolvimento do APK verificada com apksigner. O instalador Windows permanece sem assinatura comercial; essas verificações não substituem testes de instalação em dispositivos reais.
 - Nota PDF de 4 páginas renderizada e conferida visualmente.
 
 ## Ainda não validado
