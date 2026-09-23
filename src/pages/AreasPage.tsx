@@ -1,0 +1,7 @@
+import { Link } from 'react-router-dom'
+import { ArrowUpRight, Plus } from 'lucide-react'
+import { useLifeOS } from '../app/LifeOSProvider'
+import { useCategories } from '../hooks/useCategories'
+import { getIcon } from '../lib/presentation'
+import { PageHeading } from '../components/PageHeading'
+export default function AreasPage(){const {settings,moduleTasks}=useLifeOS();const {modules,categories}=useCategories();return <div className="page calm-page"><PageHeading eyebrow="Organizar" title="Suas áreas" description="Escolha um assunto para cuidar agora." actions={<Link className="button button--secondary" to="/categories"><Plus size={17}/>Organizar áreas</Link>}/><div className="area-tiles">{modules.filter(m=>settings.enabledModules.includes(m.id)).map(({id,label,icon:Icon})=><Link className="area-tile" to={`/${id==='fushi'?'projects':id}`} key={id}><Icon size={30}/><h2>{label}</h2><p>{moduleTasks.filter(t=>t.module===id&&t.status!=='done').length} tarefas em aberto</p><ArrowUpRight size={18}/></Link>)}{categories.filter(c=>!c.archived).map(c=>{const Icon=getIcon(c.icon);return <Link className="area-tile" to={`/area/${c.id}`} key={c.id}><Icon width={30} height={30}/><h2>{c.name}</h2><p>{moduleTasks.filter(t=>t.module===c.id&&t.status!=='done').length} tarefas em aberto</p><ArrowUpRight size={18}/></Link>})}<Link className="area-tile area-tile--add" to="/categories"><Plus size={28}/><h2>Uma nova área</h2><p>Crie ou escolha uma categoria.</p></Link></div></div>}

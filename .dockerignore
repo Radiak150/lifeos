@@ -1,0 +1,12 @@
+node_modules
+dist
+release
+deliverables
+output
+tmp
+private-sharing
+.env*
+.git
+*.pdf
+*.docx
+*.zip

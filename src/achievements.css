@@ -1,0 +1,45 @@
+.achievements-page { gap: 20px; }
+.achievements-level { display: flex; align-items: center; gap: 22px; padding: 25px; border-color: var(--border); background: var(--purple-soft); }
+.achievements-level__symbol { flex-shrink: 0; display: grid; place-items: center; width: 72px; height: 72px; color: var(--purple); border: 1px solid var(--border); border-radius: 20px; background: var(--panel); }
+.achievements-level__main { flex: 1; min-width: 0; max-width: 600px; }
+.achievements-level__main .eyebrow { color: var(--purple); font-size: 11px; }
+.achievements-level h2 { margin: 7px 0 14px; font-size: 30px; }
+.achievements-level__main p { margin: 9px 0 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.achievements-level__count { margin-left: auto; display: grid; gap: 7px; padding-left: 20px; text-align: center; }
+.achievements-level__count strong { color: var(--green); font-size: 30px; }
+.achievements-level__count strong span { color: var(--muted); font-size: 20px; font-weight: 400; }
+.achievements-level__count > span { color: var(--muted); font-size: 12px; }
+.achievements-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.achievement-card { display: flex; flex-direction: column; padding: 22px; }
+.achievement-card > header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+.achievement-card__icon { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 14px; color: var(--purple); background: var(--purple-soft); border: 1px solid var(--border); }
+.achievement-card__status { display: inline-flex; align-items: center; gap: 5px; font-size: 11px; color: var(--muted); }
+.achievement-card h2 { font-size: 17px; line-height: 1.4; margin: 18px 0 8px; }
+.achievement-card > p { color: var(--muted); font-size: 13px; line-height: 1.6; margin: 0 0 24px; }
+.achievement-card footer { margin-top: auto; }
+.achievement-card__progress { display: flex; flex-wrap: wrap; gap: 5px; justify-content: space-between; color: var(--text-soft); font-size: 11px; margin-bottom: 8px; }
+.achievement-card footer small { display: block; margin-top: 11px; color: var(--muted); line-height: 1.5; font-size: 11px; }
+.achievement-card--unlocked { border-color: var(--green); background: var(--green-soft); }
+.achievement-card--unlocked .achievement-card__icon { color: var(--green); background: var(--panel); border-color: var(--green); }
+.achievement-card--unlocked .achievement-card__status { color: var(--green); }
+.achievements-empty { margin: 0; padding: 17px 20px; border: 1px dashed var(--border); border-radius: 10px; font-size: 13px; line-height: 1.7; color: var(--muted); }
+.achievements-empty a { display: inline-flex; align-items: center; gap: 6px; color: var(--green); margin-left: 6px; }
+.achievements-rules { border-top: 1px solid var(--border); padding-top: 16px; color: var(--muted); font-size: 12px; line-height: 1.7; }
+.achievements-rules summary { cursor: pointer; color: var(--text-soft); padding: 8px 0; }
+.achievements-rules summary:focus-visible, .achievements-empty a:focus-visible { outline: 2px solid var(--green); outline-offset: 4px; border-radius: 4px; }
+.achievements-rules p { max-width: 950px; }
+html[data-contrast='high'] .achievement-card { border-color: #7f9485; }
+html[data-contrast='high'] .achievement-card p, html[data-contrast='high'] .achievement-card small, html[data-contrast='high'] .achievements-rules { color: var(--text); }
+@media (max-width: 1200px) { .achievements-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 620px) {
+  .achievements-page { gap: 16px; }
+  .achievements-level { flex-wrap: wrap; gap: 16px; padding: 20px; }
+  .achievements-level__symbol { width: 52px; height: 52px; border-radius: 15px; }
+  .achievements-level__main { flex-basis: calc(100% - 68px); }
+  .achievements-level__main .eyebrow { line-height: 1.7; }
+  .achievements-level h2 { font-size: 25px; }
+  .achievements-level__count { width: 100%; display: flex; align-items: baseline; justify-content: center; padding: 14px 0 0; border-top: 1px solid var(--border); }
+  .achievements-level__count strong { font-size: 23px; }
+  .achievements-grid { grid-template-columns: 1fr; gap: 12px; }
+  .achievement-card { padding: 20px; }
+}

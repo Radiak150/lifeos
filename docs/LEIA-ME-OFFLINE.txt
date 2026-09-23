@@ -1,0 +1,63 @@
+LIFEOS - WINDOWS 64 BITS
+Rotina local, guia inicial e conquistas
+
+COMO ABRIR
+1. Extraia todo o ZIP para uma pasta permanente.
+2. De dois cliques em ABRIR-LIFEOS.cmd.
+3. Use http://127.0.0.1:5181 sempre no mesmo navegador.
+O pacote inclui o Node.js; nao precisa instalar dependencias ou ter internet.
+Nao abra dist/index.html diretamente.
+
+PRIMEIRO ACESSO
+Um navegador sem dados anteriores mostra o guia inicial. Voce pode escolher
+uma rotina totalmente em branco. Nenhum horario ou registro pessoal do autor
+e inserido nessa configuracao. Se ja usa LifeOS no mesmo endereco/navegador,
+seus dados permanecem; a instalacao nao apaga nem substitui sua rotina.
+
+GUIA E CATEGORIAS
+Use Guia de uso para acompanhar as etapas. Categorias podem ser criadas,
+renomeadas e arquivadas. Arquivar nao apaga registros nem pausa habitos.
+Habitos definem repeticoes; tarefas sao entregas; agenda reserva horarios.
+
+OFFLINE E INSTALACAO
+O servidor do pacote funciona apenas neste computador (127.0.0.1).
+Nao e necessario desligar a internet; o app nao depende dela para registrar.
+O Guia informa quando a copia offline do navegador estiver preparada.
+Chrome ou Edge podem oferecer Instalar aplicativo. A disponibilidade depende
+do navegador. No celular, e necessario primeiro disponibilizar a aplicacao
+em HTTPS; este ZIP nao e um APK nem um instalador para iPhone.
+
+SEUS DADOS
+Os registros ficam no navegador, nao dentro do ZIP. Mudar de navegador,
+perfil, endereco ou porta pode mostrar uma rotina diferente. Para transferir,
+exporte em Configuracoes > Dados e importe no outro aparelho.
+Limpar os dados do navegador pode apagar tudo. Faca copias periodicas.
+O backup tem dados pessoais sem senha: guarde-o de forma privada.
+
+XP E CONQUISTAS
+Habitos novos usam 10 XP para Feito e 5 XP para Parcial (peso inicial 0,5).
+O premio pode ser configurado por habito. Cada 100 XP somam um nivel.
+Edicoes corrigem o total; clicar de novo nao duplica os pontos.
+Conquistas reconhecem marcos dos registros, sem premios monetarios,
+competicao, diagnostico ou pontuacao por quantidade de agua/horas de sono.
+
+ANTES DE APRESENTAR
+Use dados de demonstracao identificados, em outro navegador/perfil.
+Nao inclua registros pessoais no material do grupo.
+Ha testes automatizados, mas nao validacao clinica nem garantia de eficacia.
+Em Compartilhar, selecione os dados e autorize um link de leitura para a
+terapeuta. Requer hospedagem HTTPS configurada (PUBLICAR-ONLINE.md).
+O servico envia alteracoes com o app aberto e conectado; sem internet,
+os registros ficam locais e sao enviados ao reconectar. O link expira
+em 7 dias e pode ser revogado. Compartilhar nao sincroniza a edicao
+da rotina entre seus aparelhos. Este ZIP nao inclui uma hospedagem publica.
+A entrega academica depende da revisao e defesa do grupo.
+
+ATUALIZAR
+Exporte um backup antes. Feche a instancia anterior do servidor local antes
+de iniciar outro pacote no mesmo endereco. Reabra o atalho apos reiniciar
+o computador. A origem do app deve continuar 127.0.0.1:5181.
+
+LICENCAS
+Node.js: runtime/LICENSE-Node.txt
+Bibliotecas da interface: LICENCAS-DEPENDENCIAS.txt

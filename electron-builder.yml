@@ -1,0 +1,24 @@
+appId: com.lifeos.app
+productName: LifeOS
+directories:
+  output: release/windows-0.2.0
+files:
+  - dist/**/*
+  - electron/main.cjs
+  - package.json
+asar: true
+npmRebuild: false
+win:
+  target: nsis
+  icon: public/pwa-512x512.png
+  artifactName: LifeOS-Instalador-${version}.${ext}
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: LifeOS
+  deleteAppDataOnUninstall: false
+  runAfterFinish: false
+publish: null
